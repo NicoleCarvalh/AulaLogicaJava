@@ -8,16 +8,20 @@ public class Aula02_Ex7 {
         double tamanho;
         double tamanhoArredondado;
 
-        do {
+
+        System.out.println("Digite abaixo o tamanho da cruz (apenas números ímpares)");
+        tamanho = sc.nextInt();
+
+        while (tamanho % 2 == 0){
             System.out.println("Digite abaixo o tamanho da cruz (apenas números ímpares)");
             tamanho = sc.nextInt();
-        } while (tamanho % 2 == 0);
+        }
 
         System.out.println("O número " + tamanho + " é ímpar");
 
-        for(int r=1; r<=tamanho; r++){
+        for(int r=1; r<=tamanho; r++){ //linhas
             tamanhoArredondado = Math.ceil(tamanho/2);
-            for (int c = 1; c<=tamanho; c++){
+            for (int c = 1; c<=tamanho; c++){ //colunas
                 if(r == tamanhoArredondado || c == tamanhoArredondado){
                     System.out.print("#");
                 }else if (c != tamanhoArredondado){
