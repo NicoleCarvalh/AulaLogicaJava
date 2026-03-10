@@ -6,14 +6,15 @@ public class Aula02_Ex6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int contagemVendedor = 1;
+
         int contagemDia = 1;
         String nomeVendedor = "";
         double valorVendidoVendedor;
         double totalGeralVendasEquipe = 0;
 
+
         do {
-            for (int i = 1; contagemVendedor <= 5; i++){
+            for (int contagemVendedor = 1; contagemVendedor <= 5; contagemVendedor++){
                 switch (contagemVendedor){
                     case 1:
                         nomeVendedor = "Julia";
@@ -44,22 +45,21 @@ public class Aula02_Ex6 {
                 if (totalGeralVendasEquipe >= 1000){
                     System.out.println("A meta de R$1000 foi atingida por " + nomeVendedor);
                     System.out.println("Com a compra no valor de " + valorVendidoVendedor);
-                    System.out.println("Total de vendas realizadas pela equipe é de " + valorVendidoVendedor);
+                    System.out.println("Total de vendas realizadas pela equipe é de " + totalGeralVendasEquipe);
 
                     break;
                 }
-
-                contagemVendedor++;
             }
 
             contagemDia++;
 
-        } while(contagemDia <= 6);
+        } while(totalGeralVendasEquipe < 1000 && contagemDia <= 6);
 
         if (totalGeralVendasEquipe < 1000){
             System.out.println("Meta de R$1000 não foi atingida.");
             System.out.println(" Total acumulado: " + totalGeralVendasEquipe);
         }
 
+        sc.close();
     }
 }

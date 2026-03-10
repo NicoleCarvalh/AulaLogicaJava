@@ -30,5 +30,6 @@ public class Aula02_Ex7 {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

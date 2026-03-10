@@ -12,12 +12,13 @@ public class Aula02_Ex8 {
         for(int r = 1; r <=tamanho; r++){
             for(int c=1; c <= tamanho; c++){
                 if((r == 1 || c == 1) || (r == tamanho || c == tamanho)){
-                    System.out.print("*");
+                    System.out.print("* ");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
             }
             System.out.println();
         }
+        sc.close();
     }
 }

@@ -9,21 +9,13 @@ public class Aula02_Ex5 {
 
 
         double somaIdadeJogadoresTime = 0;
-
         double somaAlturaJogadores = 0;
-
         int qtdJogadorMenorDeIdade = 0;
-
         int jogadoresMaisPesados = 0;
-
         int contagemDeJogadores = 0;
-
         int contagemDeTimesTotalAtual = 1;
-
         double mediaIdadesDoTime = 0;
-
         double mediaAlturaGeral = 0;
-
         double percentualPeso = 0;
 
 
@@ -71,7 +63,7 @@ public class Aula02_Ex5 {
            }
 
            mediaIdadesDoTime = somaIdadeJogadoresTime/quantidadeDeJogadoresTime;
-           System.out.println("A média das idades dos jogadores do time " + contagemDeTime + " é de " + mediaIdadesDoTime);
+           System.out.println("A média das idades dos jogadores do time " + contagemDeTimesTotalAtual + " é de " + mediaIdadesDoTime);
            contagemDeTimesTotalAtual++;
 
        }
@@ -79,9 +71,11 @@ public class Aula02_Ex5 {
         percentualPeso = (double) (jogadoresMaisPesados * 100) /(contagemDeJogadores*contagemDeTime);
 
 
-        System.out.println("-------- RESULTADOS --------");
+        System.out.println("======== RESULTADOS ========");
         System.out.println("A quantidade de jogadores menores de idade é de " + qtdJogadorMenorDeIdade);
         System.out.println("A média das alturas de todos os jogadores do campeonato é de " + mediaAlturaGeral + "m");
         System.out.println("O percentual de jogadores com +80 quilos entre todo o campeonato é de " + percentualPeso + "%");
+
+        sc.close();
     }
 }
