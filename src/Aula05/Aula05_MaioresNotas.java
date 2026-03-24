@@ -1,4 +1,4 @@
-package Aula05.atividadesAula05;
+package Aula05;
 
 import java.util.Arrays;
 

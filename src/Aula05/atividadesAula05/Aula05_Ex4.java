@@ -1,22 +1,23 @@
 package Aula05.atividadesAula05;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aula05_Ex3 {
+public class Aula05_Ex4 {
     public static void main(String[] args) {
-        List<Integer> lista1 = new ArrayList<>(List.of(1,2,3,4));
-
-        List<Integer> lista2 = new ArrayList<>(List.of(3,4,5,6));
+        List<Integer> listaDuplicados = new ArrayList<>(List.of(1,2,2,3,4,4,5));
 
         List<Integer> saida = new ArrayList<>();
 
-        for (int n: lista1){
-            if (lista2.contains(n)){
+        for(int n: listaDuplicados){
+            if(saida.contains(n)){
+                continue;
+            } else {
                 saida.add(n);
             }
         }
+
         System.out.println(saida);
     }
+
 }
