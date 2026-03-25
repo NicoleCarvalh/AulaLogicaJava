@@ -1,6 +1,6 @@
 package Aula03;
 
-import POO.ContaBancaria;
+import POO.ExemploGerais.ContaBancaria;
 
 import java.util.Scanner;
 

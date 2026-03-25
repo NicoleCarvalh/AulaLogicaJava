@@ -1,6 +1,6 @@
 package Aula03;
 
-import POO.Aluno;
+import POO.ExemploGerais.Aluno;
 
 public class Aula04_AprovacaoAluno {
     public static void main(String[] args) {

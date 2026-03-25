@@ -1,4 +1,4 @@
-package POO;
+package POO.ExemploGerais;
 
 public class ContaBancaria {
 

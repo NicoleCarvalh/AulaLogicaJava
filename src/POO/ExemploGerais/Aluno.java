@@ -1,4 +1,4 @@
-package POO;
+package POO.ExemploGerais;
 
 public class Aluno {
     String nome;
@@ -12,7 +12,7 @@ public class Aluno {
     }
 
     public void mostrarDados(){
-        System.out.println("POO.Aluno: ");
+        System.out.println("POO.ExemploGerais.Aluno: ");
         System.out.println(nome);
 
         System.out.println("Idade: ");
@@ -28,9 +28,9 @@ public class Aluno {
 
     public void mostrarAprovacao(){
         if (media() > 6){
-            System.out.println("POO.Aluno aprovado");
+            System.out.println("POO.ExemploGerais.Aluno aprovado");
         } else {
-            System.out.println("POO.Aluno reprovado");
+            System.out.println("POO.ExemploGerais.Aluno reprovado");
         }
     }
 }
