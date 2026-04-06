@@ -17,7 +17,7 @@ public class ExemploMatriz {
         System.out.println(matriz[0].length);
 
         for(int i = 0; i < tabela.length; i++){ // linha
-            for (int j = 0; j < tabela[i].length; j++){ // colunasv
+            for (int j = 0; j < tabela[i].length; j++){ // colunas
                 System.out.printf(tabela[i][j] + "\t");
             }
             System.out.println();
