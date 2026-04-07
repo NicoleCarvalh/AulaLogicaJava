@@ -21,6 +21,8 @@ public class Exercicio2 {
             System.out.println("3. Exibir vencedor");
             System.out.println("4. Sair");
             System.out.print("Opção: ");
+            opcao = sc.nextInt();
+
             switch(opcao){
                 case 1:
                     System.out.println("Para registar voto, informe o candidato ");
@@ -36,6 +38,12 @@ public class Exercicio2 {
 
                     break;
 
+                case 4:
+                    break;
+
+                default:
+                    break;
+
             }
 
         } while (opcao != 4);
@@ -47,7 +55,8 @@ public class Exercicio2 {
     public static void registrarVoto(String candidato){
 
         if(candidatos.containsKey(candidato)){
-            candidatos.get(candidato) ;
+            int voto = candidatos.get(candidato);
+            candidatos.put(candidato, voto+1);
         }
 
     }
