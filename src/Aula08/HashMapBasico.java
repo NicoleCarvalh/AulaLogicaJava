@@ -13,7 +13,7 @@ public class HashMapBasico {
         idades.put("Claudio", 22);
 
         System.out.println(idades.size());
-        System.out.println("Hasmap " + idades);
+        System.out.println("Hashmap " + idades);
 
         // Se inserir uma chave que não existe, aparece NULL
         // (não dá erro, apenas aparece null
